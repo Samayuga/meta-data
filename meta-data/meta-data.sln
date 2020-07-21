@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30204.135
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "meta-data-core-services", "meta-data-core-services\meta-data-core-services.csproj", "{3C357615-02AB-4257-B1F4-32265ABC7B87}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "meta-data-core-services", "meta-data-core-services\meta-data-core-services.csproj", "{3C357615-02AB-4257-B1F4-32265ABC7B87}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "meta-data-entity-framework-core", "meta-data-entity-framework-core\meta-data-entity-framework-core.csproj", "{4C8994A2-BD87-4FAE-984D-9449BAB463E3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{3C357615-02AB-4257-B1F4-32265ABC7B87}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3C357615-02AB-4257-B1F4-32265ABC7B87}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3C357615-02AB-4257-B1F4-32265ABC7B87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C8994A2-BD87-4FAE-984D-9449BAB463E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C8994A2-BD87-4FAE-984D-9449BAB463E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C8994A2-BD87-4FAE-984D-9449BAB463E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C8994A2-BD87-4FAE-984D-9449BAB463E3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
