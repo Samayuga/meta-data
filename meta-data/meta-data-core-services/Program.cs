@@ -7,7 +7,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-namespace meta_data_core_services
+namespace MetaDataCoreServices
 {
     public class Program
     {

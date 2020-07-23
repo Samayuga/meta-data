@@ -10,7 +10,8 @@
 
     <!-- Set this to true if you enable server-side prerendering -->
     <BuildServerSideRenderer>false</BuildServerSideRenderer>
-    <RootNamespace>meta_data_core_services</RootNamespace>
+    <RootNamespace>MetaDataCoreServices</RootNamespace>
+    <AssemblyName>MetaDataCoreServices</AssemblyName>
   </PropertyGroup>
 
   <ItemGroup>

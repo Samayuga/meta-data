@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
-namespace meta_data_core_services.Controllers
+namespace MetaDataCoreServices.Controllers
 {
     [ApiController]
     [Route("[controller]")]

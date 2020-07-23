@@ -6,7 +6,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
-namespace meta_data_core_services
+namespace MetaDataCoreServices
 {
     public class Startup
     {
