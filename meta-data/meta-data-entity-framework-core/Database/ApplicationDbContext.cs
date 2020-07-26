@@ -14,6 +14,9 @@ namespace MetaDataEntityFrameworkCore.Database
 
         public DbSet<Continent> Continents { get; set; }
 
+        protected override void OnConfiguring(DbContextOptionsBuilder options)
+           => options.UseSqlServer("Server=localhost\\SQLEXPRESS;Database=master;Trusted_Connection=True;");
+
         protected override void OnModelCreating(ModelBuilder builder)
         {
 
