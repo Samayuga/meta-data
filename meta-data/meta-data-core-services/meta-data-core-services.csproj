@@ -28,6 +28,16 @@ for more info please visit https://github.com/samayuga</Description>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.SpaServices.Extensions" Version="3.1.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.6">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.6">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
   </ItemGroup>
 
   <ItemGroup>
@@ -38,6 +48,8 @@ for more info please visit https://github.com/samayuga</Description>
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Core\Database\MetaDataDatabase\EntityFramework\EntityTypeConfigurations\" />
+    <Folder Include="Core\Database\MetaDataDatabase\EntityFramework\Migrations\" />
     <Folder Include="Core\Services\Controllers\EntityControllers\" />
   </ItemGroup>
 

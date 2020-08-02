@@ -1,7 +1,9 @@
+using MetaDataCoreServices.Core.Database.MetaDataDatabase.EntityFramework.Entities.MetaDataDatabaseContext;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.SpaServices.AngularCli;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -21,6 +23,9 @@ namespace MetaDataCoreServices
             {
                 configuration.RootPath = "ClientApp/dist";
             });
+
+            services.AddDbContext<MetaDataDatabaseContext>(options =>
+            options.UseSqlServer(Configuration.GetConnectionString("MetaDataDatabaseContext")));
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
