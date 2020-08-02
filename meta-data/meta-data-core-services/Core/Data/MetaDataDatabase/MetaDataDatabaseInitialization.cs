@@ -1,13 +1,13 @@
-﻿using MetaDataCoreServices.Core.Data.MetaDataDatabase.EntityFramework.Entities;
-using MetaDataCoreServices.Core.Data.MetaDataDatabase.EntityFramework.Entities.MetaDataDatabaseContext;
+﻿using MetaDataCoreServices.Core.Data.MetaDataDatabase.EntityFramework;
+using MetaDataCoreServices.Core.Data.MetaDataDatabase.EntityFramework.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace MetaDataCoreServices.Core.Data.MetaDataDatabase.EntityFramework.Seed
+namespace MetaDataCoreServices.Core.Data.MetaDataDatabase
 {
-    public static class Seed
+    public static class MetaDataDatabaseInitialization
     {
         public static void Initialize(MetaDataDatabaseContext context)
         {
