@@ -7,12 +7,10 @@ using System.Threading.Tasks;
 
 namespace MetaDataCoreServices.Core.Data.MetaDataDatabase.EntityFramework.Seed
 {
-    public static class DatabaseInitializer
+    public static class Seed
     {
         public static void Initialize(MetaDataDatabaseContext context)
         {
-            //context.Database.EnsureCreated();
-
             if (context.Table1.Any())
                 return;   
 

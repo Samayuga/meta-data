@@ -31,7 +31,7 @@ namespace MetaDataCoreServices
             try
             {
                 var context = serviceProvider.GetRequiredService<MetaDataDatabaseContext>();
-                DatabaseInitializer.Initialize(context);
+                Seed.Initialize(context);
             }
             catch (Exception exception)
             {
