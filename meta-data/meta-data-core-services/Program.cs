@@ -2,13 +2,13 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using MetaDataCoreServices.Core.Database.MetaDataDatabase.EntityFramework.Entities.MetaDataDatabaseContext;
+using MetaDataCoreServices.Core.Data.MetaDataDatabase.EntityFramework.Entities.MetaDataDatabaseContext;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.DependencyInjection;
-using MetaDataCoreServices.Core.Database.MetaDataDatabase.EntityFramework.Seed;
+using MetaDataCoreServices.Core.Data.MetaDataDatabase.EntityFramework.Seed;
 
 namespace MetaDataCoreServices
 {

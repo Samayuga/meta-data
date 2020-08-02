@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace MetaDataCoreServices.Core.Database.MetaDataDatabase.EntityFramework.Entities
+namespace MetaDataCoreServices.Core.Data.MetaDataDatabase.EntityFramework.Entities
 {
     public class Table1
     {

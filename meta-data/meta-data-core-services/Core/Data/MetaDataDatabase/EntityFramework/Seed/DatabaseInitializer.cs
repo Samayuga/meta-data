@@ -1,17 +1,17 @@
-﻿using MetaDataCoreServices.Core.Database.MetaDataDatabase.EntityFramework.Entities;
-using MetaDataCoreServices.Core.Database.MetaDataDatabase.EntityFramework.Entities.MetaDataDatabaseContext;
+﻿using MetaDataCoreServices.Core.Data.MetaDataDatabase.EntityFramework.Entities;
+using MetaDataCoreServices.Core.Data.MetaDataDatabase.EntityFramework.Entities.MetaDataDatabaseContext;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace MetaDataCoreServices.Core.Database.MetaDataDatabase.EntityFramework.Seed
+namespace MetaDataCoreServices.Core.Data.MetaDataDatabase.EntityFramework.Seed
 {
     public static class DatabaseInitializer
     {
         public static void Initialize(MetaDataDatabaseContext context)
         {
-            context.Database.EnsureCreated();
+            //context.Database.EnsureCreated();
 
             if (context.Table1.Any())
                 return;   

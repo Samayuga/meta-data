@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace MetaDataCoreServices.Core.Database.MetaDataDatabase.EntityFramework.Entities.MetaDataDatabaseContext
+namespace MetaDataCoreServices.Core.Data.MetaDataDatabase.EntityFramework.Entities.MetaDataDatabaseContext
 {
     public class MetaDataDatabaseContext : DbContext
     {
