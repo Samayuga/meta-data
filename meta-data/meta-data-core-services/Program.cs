@@ -8,6 +8,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.DependencyInjection;
+using MetaDataCoreServices.Core.Database.MetaDataDatabase.EntityFramework.Seed;
 
 namespace MetaDataCoreServices
 {
@@ -17,7 +18,7 @@ namespace MetaDataCoreServices
         {
 
             var host = CreateHostBuilder(args).Build();
-
+           
             CreateDbIfNotExists(host);
 
             host.Run();
@@ -39,7 +40,8 @@ namespace MetaDataCoreServices
                 try
                 {
                     var context = services.GetRequiredService<MetaDataDatabaseContext>();
-                    context.Database.EnsureCreated();
+                    DatabaseInitializer.Initialize(context);
+                    //context.Database.EnsureCreated();
                 }
                 catch (Exception ex)
                 {
