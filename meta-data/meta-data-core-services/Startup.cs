@@ -10,10 +10,7 @@ namespace MetaDataCoreServices
 {
     public class Startup
     {
-        public Startup(IConfiguration configuration)
-        {
-            Configuration = configuration;
-        }
+        public Startup(IConfiguration configuration) => Configuration = configuration;
 
         public IConfiguration Configuration { get; }
 
@@ -38,10 +35,9 @@ namespace MetaDataCoreServices
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();
+            
             if (!env.IsDevelopment())
-            {
                 app.UseSpaStaticFiles();
-            }
 
             app.UseRouting();
 
@@ -57,9 +53,7 @@ namespace MetaDataCoreServices
                 spa.Options.SourcePath = "ClientApp";
 
                 if (env.IsDevelopment())
-                {
                     spa.UseAngularCliServer(npmScript: "start");
-                }
             });
         }
     }
