@@ -13,9 +13,9 @@ namespace MetaDataCoreServices.Core.Data.MetaDataDatabase.EntityFramework.Entity
         public void Configure(EntityTypeBuilder<Geolocation> builder)
         {
             builder.Property(c => c.Name).IsRequired();
-            //builder.Property(c => c.Type).IsRequired();
 
             builder.HasKey(c => c.Id);
+            builder.HasOne(c => c.GeolocationType).WithMany().HasForeignKey(c => c.GeolocationTypeId).IsRequired();
         }
     }
 }

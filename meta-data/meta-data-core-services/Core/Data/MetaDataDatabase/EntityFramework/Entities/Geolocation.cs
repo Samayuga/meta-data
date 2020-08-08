@@ -9,7 +9,9 @@ namespace MetaDataCoreServices.Core.Data.MetaDataDatabase.EntityFramework.Entiti
     public class Geolocation
     {
         public HierarchyId Id { get; set; }
-        //public string Type { get; set; }
         public string Name { get; set; }
+
+        public GeolocationType GeolocationType { get; set; }
+        public HierarchyId GeolocationTypeId { get; set; }
     }
 }
