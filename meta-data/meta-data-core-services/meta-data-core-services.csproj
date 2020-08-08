@@ -48,6 +48,7 @@ for more info please visit https://github.com/samayuga</Description>
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Core\Data\MetaDataDatabase\EntityFramework\Entities\" />
     <Folder Include="Core\Data\MetaDataDatabase\EntityFramework\EntityTypeConfigurations\" />
     <Folder Include="Core\Services\Controllers\EntityControllers\" />
   </ItemGroup>

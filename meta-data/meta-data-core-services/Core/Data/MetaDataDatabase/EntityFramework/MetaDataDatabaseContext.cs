@@ -1,5 +1,4 @@
-﻿using MetaDataCoreServices.Core.Data.MetaDataDatabase.EntityFramework.Entities;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,11 +13,8 @@ namespace MetaDataCoreServices.Core.Data.MetaDataDatabase.EntityFramework
         {
         }
 
-        public DbSet<Table1> Table1 { get; set; }
-
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Table1>().ToTable("Table1");
         }
     }
 }
