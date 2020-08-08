@@ -13,7 +13,7 @@ namespace MetaDataCoreServices.Core.Data.MetaDataDatabase.EntityFramework.Entity
         public void Configure(EntityTypeBuilder<Geolocation> builder)
         {
             builder.Property(c => c.Name).IsRequired();
-            builder.Property(c => c.Type).IsRequired();
+            //builder.Property(c => c.Type).IsRequired();
 
             builder.HasKey(c => c.Id);
         }
