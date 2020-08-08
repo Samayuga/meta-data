@@ -12,7 +12,9 @@ namespace MetaDataCoreServices.Core.Data.MetaDataDatabase.EntityFramework.Entity
     {
         public void Configure(EntityTypeBuilder<GeolocationType> builder)
         {
-            builder.HasKey(c => c.Name);
+            builder.Property(c => c.Name).IsRequired();
+
+            builder.HasKey(c => c.Id);
         }
     }
 }
