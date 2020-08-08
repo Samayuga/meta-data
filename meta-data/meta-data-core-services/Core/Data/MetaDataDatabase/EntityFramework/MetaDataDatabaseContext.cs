@@ -1,4 +1,6 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using MetaDataCoreServices.Core.Data.MetaDataDatabase.EntityFramework.Entities;
+using MetaDataCoreServices.Core.Data.MetaDataDatabase.EntityFramework.EntityTypeConfigurations;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,8 +15,11 @@ namespace MetaDataCoreServices.Core.Data.MetaDataDatabase.EntityFramework
         {
         }
 
+        public DbSet<GeolocationType> GeolocationTypes { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.ApplyConfiguration(new GeolocationTypeEntityTypeConfiguration());
         }
     }
 }
