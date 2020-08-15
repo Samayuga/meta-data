@@ -16,13 +16,11 @@ namespace MetaDataCoreServices.Core.Data.MetaDataDatabase.EntityFramework
         {
         }
 
-        //public DbSet<GeolocationType> GeolocationTypes { get; set; }
-        //public DbSet<Geolocation> Geolocations { get; set; }
+        public DbSet<Planet> Planets { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            //modelBuilder.ApplyConfiguration(new GeolocationTypeEntityTypeConfiguration());
-            //modelBuilder.ApplyConfiguration(new GeolocationEntityTypeConfiguration());
+            modelBuilder.ApplyConfiguration(new PlanetEntityTypeConfiguration());
 
             modelBuilder.Seed();
         }
