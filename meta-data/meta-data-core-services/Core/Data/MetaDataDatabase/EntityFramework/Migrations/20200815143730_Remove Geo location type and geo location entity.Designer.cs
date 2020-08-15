@@ -3,14 +3,16 @@ using MetaDataCoreServices.Core.Data.MetaDataDatabase.EntityFramework;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace MetaDataCoreServices.Core.Data.MetaDataDatabase.EntityFramework.Migrations
 {
     [DbContext(typeof(MetaDataDatabaseContext))]
-    partial class MetaDataDatabaseContextModelSnapshot : ModelSnapshot
+    [Migration("20200815143730_Remove Geo location type and geo location entity")]
+    partial class RemoveGeolocationtypeandgeolocationentity
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
