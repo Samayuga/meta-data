@@ -11,12 +11,12 @@ namespace MetaDataCoreServices.Core.Data.MetaDataDatabase.EntityFramework.Seed
     {
         public static void Seed(this ModelBuilder modelBuilder)
         {
-            //Seed_GeolocationTypes(modelBuilder);
+            SeedPlanets(modelBuilder);
         }
 
-        private static void Seed_GeolocationTypes(ModelBuilder modelBuilder)
+        private static void SeedPlanets(ModelBuilder modelBuilder)
         {
-            //modelBuilder.Entity<GeolocationType>().HasData(new GeolocationType { Id= HierarchyId.Parse("/1/"), Name="" });
+            modelBuilder.Entity<Planet>().HasData(new Planet { PlanetId = HierarchyId.Parse("/1/"), PlanetName="Earth" });
         }
     }
 }

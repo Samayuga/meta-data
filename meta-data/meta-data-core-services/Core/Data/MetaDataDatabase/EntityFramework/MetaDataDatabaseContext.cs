@@ -16,10 +16,12 @@ namespace MetaDataCoreServices.Core.Data.MetaDataDatabase.EntityFramework
         {
         }
 
+        public DbSet<Continent> Continents { get; set; }
         public DbSet<Planet> Planets { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.ApplyConfiguration(new ContinentEntityTypeConfiguration());
             modelBuilder.ApplyConfiguration(new PlanetEntityTypeConfiguration());
 
             modelBuilder.Seed();
