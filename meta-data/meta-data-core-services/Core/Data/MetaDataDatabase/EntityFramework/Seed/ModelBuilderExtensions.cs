@@ -11,12 +11,6 @@ namespace MetaDataCoreServices.Core.Data.MetaDataDatabase.EntityFramework.Seed
     {
         public static void Seed(this ModelBuilder modelBuilder)
         {
-            SeedPlanets(modelBuilder);
-        }
-
-        private static void SeedPlanets(ModelBuilder modelBuilder)
-        {
-            modelBuilder.Entity<Planet>().HasData(new Planet { PlanetId = HierarchyId.Parse("/1/"), PlanetName="Earth" });
         }
     }
 }

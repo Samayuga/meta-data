@@ -14,6 +14,8 @@ namespace MetaDataCoreServices.Core.Data.MetaDataDatabase.EntityFramework.Entity
         {
             builder.HasKey(c => c.PlanetId);
             builder.Property(c => c.PlanetName).IsRequired();
+
+            builder.HasData(new Planet { PlanetId = HierarchyId.Parse("/1/"), PlanetName = "Earth" });
         }
     }
 }
