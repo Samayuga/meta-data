@@ -1,6 +1,6 @@
 ﻿using MetaDataCoreServices.Core.Data.MetaDataDatabase.EntityFramework.Entities;
 using MetaDataCoreServices.Core.Data.MetaDataDatabase.EntityFramework.EntityTypeConfigurations;
-using MetaDataCoreServices.Core.Data.MetaDataDatabase.EntityFramework.Seed;
+using MetaDataCoreServices.Core.Data.MetaDataDatabase.EntityFramework.Extentions;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -24,7 +24,7 @@ namespace MetaDataCoreServices.Core.Data.MetaDataDatabase.EntityFramework
             modelBuilder.ApplyConfiguration(new ContinentEntityTypeConfiguration());
             modelBuilder.ApplyConfiguration(new PlanetEntityTypeConfiguration());
 
-            modelBuilder.Seed();
+            modelBuilder.SeedDatabase();
         }
     }
 }

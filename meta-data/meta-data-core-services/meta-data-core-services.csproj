@@ -43,13 +43,13 @@ for more info please visit https://github.com/samayuga</Description>
 
   <ItemGroup>
     <!-- Don't publish the SPA source files, but do show them in the project files list -->
+    <Compile Remove="Core\Services\**" />
     <Content Remove="$(SpaRoot)**" />
+    <Content Remove="Core\Services\**" />
+    <EmbeddedResource Remove="Core\Services\**" />
     <None Remove="$(SpaRoot)**" />
+    <None Remove="Core\Services\**" />
     <None Include="$(SpaRoot)**" Exclude="$(SpaRoot)node_modules\**" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Core\Services\Controllers\EntityControllers\" />
   </ItemGroup>
 
   <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">
