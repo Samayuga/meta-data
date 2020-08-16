@@ -3,14 +3,16 @@ using MetaDataCoreServices.Core.Data.MetaDataDatabase.EntityFramework;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace MetaDataCoreServices.Core.Data.MetaDataDatabase.EntityFramework.Migrations
 {
     [DbContext(typeof(MetaDataDatabaseContext))]
-    partial class MetaDataDatabaseContextModelSnapshot : ModelSnapshot
+    [Migration("20200816154013_Rearranged Continents")]
+    partial class RearrangedContinents
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -67,20 +69,6 @@ namespace MetaDataCoreServices.Core.Data.MetaDataDatabase.EntityFramework.Migrat
                             ContinentId = Microsoft.EntityFrameworkCore.HierarchyId.Parse("/1/7/"),
                             ContinentName = "Australia"
                         });
-                });
-
-            modelBuilder.Entity("MetaDataCoreServices.Core.Data.MetaDataDatabase.EntityFramework.Entities.Country", b =>
-                {
-                    b.Property<HierarchyId>("CountryId")
-                        .HasColumnType("hierarchyid");
-
-                    b.Property<string>("CountryName")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("CountryId");
-
-                    b.ToTable("Countries");
                 });
 
             modelBuilder.Entity("MetaDataCoreServices.Core.Data.MetaDataDatabase.EntityFramework.Entities.Planet", b =>

@@ -21,8 +21,8 @@ namespace MetaDataCoreServices.Core.Data.MetaDataDatabase.EntityFramework.Entity
             builder.HasData(new Continent { ContinentId = HierarchyId.Parse("/1/3/"), ContinentName = "Asia" });
             builder.HasData(new Continent { ContinentId = HierarchyId.Parse("/1/4/"), ContinentName = "Europe" });
             builder.HasData(new Continent { ContinentId = HierarchyId.Parse("/1/5/"), ContinentName = "North America" });
-            builder.HasData(new Continent { ContinentId = HierarchyId.Parse("/1/6/"), ContinentName = "Australia" });
-            builder.HasData(new Continent { ContinentId = HierarchyId.Parse("/1/7/"), ContinentName = "South America" });
+            builder.HasData(new Continent { ContinentId = HierarchyId.Parse("/1/6/"), ContinentName = "South America" });
+            builder.HasData(new Continent { ContinentId = HierarchyId.Parse("/1/7/"), ContinentName = "Australia" });
         }
     }
 }
