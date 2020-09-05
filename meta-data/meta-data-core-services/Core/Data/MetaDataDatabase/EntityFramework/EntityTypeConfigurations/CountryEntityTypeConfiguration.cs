@@ -14,7 +14,7 @@ namespace MetaDataCoreServices.Core.Data.MetaDataDatabase.EntityFramework.Entity
         {
             builder.HasKey(c => c.CountryId);
             builder.Property(c => c.CountryName).IsRequired();
-
+            builder.HasOne(c => c.Currency).WithMany().HasForeignKey(c => c.CurrencyId);
 
             builder.HasData(new Country { CountryId = HierarchyId.Parse("/1/1/1/"), CountryName = "Algeria" });
             builder.HasData(new Country { CountryId = HierarchyId.Parse("/1/1/2/"), CountryName = "Angola" });
