@@ -15,7 +15,7 @@ namespace MetaDataCoreServices.Core.Data.MetaDataDatabase.EntityFramework.Entiti
         public string OrthographicMap { get; set; }
         public string CallingCode { get; set; }
         public string ISOCode { get; set; }
-        public HierarchyId CurrencyId { get; set; }
+        public string CurrencyISOCode { get; set; }
     }
 
     public partial class Country

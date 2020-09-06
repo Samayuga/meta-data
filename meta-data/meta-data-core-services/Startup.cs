@@ -25,7 +25,7 @@ namespace MetaDataCoreServices
             });
 
             services.AddDbContext<MetaDataDatabaseContext>(options =>
-            options.UseSqlServer(Configuration.GetConnectionString("MetaDataDatabaseContext"), x => x.UseHierarchyId()));
+            options.UseSqlServer(Configuration.GetConnectionString("MetaDataDatabaseContext"), x => x.UseHierarchyId()).EnableSensitiveDataLogging());
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
