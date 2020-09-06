@@ -29,7 +29,7 @@ namespace MetaDataCoreServices.Core.Data.MetaDataDatabase.EntityFramework.Entity
             builder.HasData(new Currency { CurrencyISOCode = "BBD", Name = "Barbadian dollar", Symbol = "$",  FractionalUnit = "Cent", BaseNumber = 100 });
             builder.HasData(new Currency { CurrencyISOCode = "BDT", Name = "Bangladeshi taka", Symbol = "৳",  FractionalUnit = "Poisha", BaseNumber = 100 });
             builder.HasData(new Currency { CurrencyISOCode = "BGN", Name = "Bulgarian lev", Symbol = "лв.",  FractionalUnit = "Stotinka", BaseNumber = 100 });
-            builder.HasData(new Currency { CurrencyISOCode = "BHD", Name = "Bahraini dinar", Symbol = ".د.ب",  FractionalUnit = "Fils", BaseNumber = 100 });
+            builder.HasData(new Currency { CurrencyISOCode = "BHD", Name = "Bahraini dinar", Symbol = ".د.ب",  FractionalUnit = "Fils", BaseNumber = 1000 });
             builder.HasData(new Currency { CurrencyISOCode = "BIF", Name = "Burundian franc", Symbol = "Fr",  FractionalUnit = "Centime", BaseNumber = 100 });
             builder.HasData(new Currency { CurrencyISOCode = "BMD", Name = "Bermudian dollar", Symbol = "$",  FractionalUnit = "Cent", BaseNumber = 100 });
             builder.HasData(new Currency { CurrencyISOCode = "BND", Name = "Brunei dollar", Symbol = "$",  FractionalUnit = "Sen", BaseNumber = 100 });
@@ -83,7 +83,7 @@ namespace MetaDataCoreServices.Core.Data.MetaDataDatabase.EntityFramework.Entity
             builder.HasData(new Currency { CurrencyISOCode = "ILS", Name = "Israeli new shekel", Symbol = "₪",  FractionalUnit = "Agora", BaseNumber = 100 });
             builder.HasData(new Currency { CurrencyISOCode = "ISK", Name = "Icelandic króna", Symbol = "kr",  FractionalUnit = "Eyrir", BaseNumber = 100 });
             builder.HasData(new Currency { CurrencyISOCode = "IRR", Name = "Iranian rial", Symbol = "﷼",  FractionalUnit = "Rial", BaseNumber = 100 });
-            builder.HasData(new Currency { CurrencyISOCode = "IQD", Name = "Iraqi dinar", Symbol = "ع.د",  FractionalUnit = "Fils", BaseNumber = 100 });
+            builder.HasData(new Currency { CurrencyISOCode = "IQD", Name = "Iraqi dinar", Symbol = "ع.د",  FractionalUnit = "Fils", BaseNumber = 1000 });
             builder.HasData(new Currency { CurrencyISOCode = "JEP", Name = "Jersey pound", Symbol = "£",  FractionalUnit = "Penny", BaseNumber = 100 });
             builder.HasData(new Currency { CurrencyISOCode = "JMD", Name = "Jamaican dollar", Symbol = "$",  FractionalUnit = "Cent", BaseNumber = 100 });
             builder.HasData(new Currency { CurrencyISOCode = "JPY", Name = "Japanese yen", Symbol = "¥",  FractionalUnit = "Sen", BaseNumber = 100 });
@@ -95,7 +95,7 @@ namespace MetaDataCoreServices.Core.Data.MetaDataDatabase.EntityFramework.Entity
             builder.HasData(new Currency { CurrencyISOCode = "KID", Name = "Kiribati dollar", Symbol = "$",  FractionalUnit = "Cent", BaseNumber = 100 });
             builder.HasData(new Currency { CurrencyISOCode = "KPW", Name = "North Korean won", Symbol = "₩",  FractionalUnit = "Chon", BaseNumber = 100 });
             builder.HasData(new Currency { CurrencyISOCode = "KRW", Name = "South Korean won", Symbol = "₩",  FractionalUnit = "Jeon", BaseNumber = 100 });
-            builder.HasData(new Currency { CurrencyISOCode = "KWD", Name = "Kuwaiti dinar", Symbol = "د.ك",  FractionalUnit = "Fils", BaseNumber = 100 });
+            builder.HasData(new Currency { CurrencyISOCode = "KWD", Name = "Kuwaiti dinar", Symbol = "د.ك",  FractionalUnit = "Fils", BaseNumber = 1000 });
             builder.HasData(new Currency { CurrencyISOCode = "KYD", Name = "Cayman Islands dollar", Symbol = "$",  FractionalUnit = "Cent", BaseNumber = 100 });
             builder.HasData(new Currency { CurrencyISOCode = "KZT", Name = "Kazakhstani tenge", Symbol = "₸",  FractionalUnit = "Tıyn", BaseNumber = 100 });
             builder.HasData(new Currency { CurrencyISOCode = "LAK", Name = "Lao kip", Symbol = "₭",  FractionalUnit = "Att", BaseNumber = 100 });
@@ -103,12 +103,12 @@ namespace MetaDataCoreServices.Core.Data.MetaDataDatabase.EntityFramework.Entity
             builder.HasData(new Currency { CurrencyISOCode = "LRD", Name = "Liberian dollar", Symbol = "$",  FractionalUnit = "Cent", BaseNumber = 100 });
             builder.HasData(new Currency { CurrencyISOCode = "LKR", Name = "Sri Lankan rupee", Symbol = "ரூ",  FractionalUnit = "Cent", BaseNumber = 100 });
             builder.HasData(new Currency { CurrencyISOCode = "LSL", Name = "Lesotho loti", Symbol = "L",  FractionalUnit = "Sente", BaseNumber = 100 });
-            builder.HasData(new Currency { CurrencyISOCode = "LYD", Name = "Libyan dinar", Symbol = "ل.د",  FractionalUnit = "Dirham", BaseNumber = 100 });
-            builder.HasData(new Currency { CurrencyISOCode = "MGA", Name = "Malagasy ariary", Symbol = "Ar",  FractionalUnit = "Iraimbilanja", BaseNumber = 100 });
+            builder.HasData(new Currency { CurrencyISOCode = "LYD", Name = "Libyan dinar", Symbol = "ل.د",  FractionalUnit = "Dirham", BaseNumber = 1000 });
+            builder.HasData(new Currency { CurrencyISOCode = "MGA", Name = "Malagasy ariary", Symbol = "Ar",  FractionalUnit = "Iraimbilanja", BaseNumber = 5 });
             builder.HasData(new Currency { CurrencyISOCode = "MDL", Name = "Moldovan leu", Symbol = "L",  FractionalUnit = "Ban", BaseNumber = 100 });
             builder.HasData(new Currency { CurrencyISOCode = "MAD", Name = "Moroccan dirham", Symbol = "د.م.",  FractionalUnit = "Centime", BaseNumber = 100 });
             builder.HasData(new Currency { CurrencyISOCode = "MOP", Name = "Macanese pataca", Symbol = "P",  FractionalUnit = "Avo", BaseNumber = 100 });
-            builder.HasData(new Currency { CurrencyISOCode = "MRU", Name = "Mauritanian ouguiya", Symbol = "UM",  FractionalUnit = "Khoums", BaseNumber = 100 });
+            builder.HasData(new Currency { CurrencyISOCode = "MRU", Name = "Mauritanian ouguiya", Symbol = "UM",  FractionalUnit = "Khoums", BaseNumber = 5 });
             builder.HasData(new Currency { CurrencyISOCode = "MNT", Name = "Mongolian tögrög", Symbol = "₮",  FractionalUnit = "Möngö", BaseNumber = 100 });
             builder.HasData(new Currency { CurrencyISOCode = "MMK", Name = "Burmese kyat", Symbol = "Ks",  FractionalUnit = "Pya", BaseNumber = 100 });
             builder.HasData(new Currency { CurrencyISOCode = "MKD", Name = "Macedonian denar", Symbol = "ден",  FractionalUnit = "Deni", BaseNumber = 100 });
@@ -123,7 +123,7 @@ namespace MetaDataCoreServices.Core.Data.MetaDataDatabase.EntityFramework.Entity
             builder.HasData(new Currency { CurrencyISOCode = "NGN", Name = "Nigerian naira", Symbol = "₦",  FractionalUnit = "Kobo", BaseNumber = 100 });
             builder.HasData(new Currency { CurrencyISOCode = "NOK", Name = "Norwegian krone", Symbol = "kr",  FractionalUnit = "Øre", BaseNumber = 100 });
             builder.HasData(new Currency { CurrencyISOCode = "NPR", Name = "Nepalese rupee", Symbol = "रू",  FractionalUnit = "Paisa", BaseNumber = 100 });
-            builder.HasData(new Currency { CurrencyISOCode = "OMR", Name = "Omani rial", Symbol = "ر.ع.",  FractionalUnit = "Baisa", BaseNumber = 100 });
+            builder.HasData(new Currency { CurrencyISOCode = "OMR", Name = "Omani rial", Symbol = "ر.ع.",  FractionalUnit = "Baisa", BaseNumber = 1000 });
             builder.HasData(new Currency { CurrencyISOCode = "PKR", Name = "Pakistani rupee", Symbol = "₨",  FractionalUnit = "Paisa", BaseNumber = 100 });
             builder.HasData(new Currency { CurrencyISOCode = "PAB", Name = "Panamanian balboa", Symbol = "B/.",  FractionalUnit = "Centésimo", BaseNumber = 100 });
             builder.HasData(new Currency { CurrencyISOCode = "PGK", Name = "Papua New Guinean kina", Symbol = "K",  FractionalUnit = "Toea", BaseNumber = 100 });
@@ -157,7 +157,7 @@ namespace MetaDataCoreServices.Core.Data.MetaDataDatabase.EntityFramework.Entity
             builder.HasData(new Currency { CurrencyISOCode = "TJS", Name = "Tajikistani somoni", Symbol = "ЅМ",  FractionalUnit = "Diram", BaseNumber = 100 });
             builder.HasData(new Currency { CurrencyISOCode = "THB", Name = "Thai baht", Symbol = "฿",  FractionalUnit = "Satang", BaseNumber = 100 });
             builder.HasData(new Currency { CurrencyISOCode = "TOP", Name = "Tongan paʻanga", Symbol = "T$",  FractionalUnit = "Seniti", BaseNumber = 100 });
-            builder.HasData(new Currency { CurrencyISOCode = "TND", Name = "Tunisian dinar", Symbol = "د.ت",  FractionalUnit = "Millime", BaseNumber = 100 });
+            builder.HasData(new Currency { CurrencyISOCode = "TND", Name = "Tunisian dinar", Symbol = "د.ت",  FractionalUnit = "Millime", BaseNumber = 1000 });
             builder.HasData(new Currency { CurrencyISOCode = "TMT", Name = "Turkmenistan manat", Symbol = "m",  FractionalUnit = "Tennesi", BaseNumber = 100 });
             builder.HasData(new Currency { CurrencyISOCode = "TRY", Name = "Turkish lira", Symbol = "₺",  FractionalUnit = "Kuruş", BaseNumber = 100 });
             builder.HasData(new Currency { CurrencyISOCode = "TWD", Name = "New Taiwan dollar", Symbol = "$",  FractionalUnit = "Cent", BaseNumber = 100 });
@@ -170,7 +170,7 @@ namespace MetaDataCoreServices.Core.Data.MetaDataDatabase.EntityFramework.Entity
             builder.HasData(new Currency { CurrencyISOCode = "UYU", Name = "Uruguayan peso", Symbol = "$",  FractionalUnit = "Centésimo", BaseNumber = 100 });
             builder.HasData(new Currency { CurrencyISOCode = "UZS", Name = "Uzbekistani soʻm", Symbol = "сўм",  FractionalUnit = "Tiyin", BaseNumber = 100 });
             builder.HasData(new Currency { CurrencyISOCode = "VES", Name = "Venezuelan bolívar soberano", Symbol = "Bs.",  FractionalUnit = "Céntimo", BaseNumber = 100 });
-            builder.HasData(new Currency { CurrencyISOCode = "VND", Name = "Vietnamese đồng", Symbol = "₫",  FractionalUnit = "Hào", BaseNumber = 100 });
+            builder.HasData(new Currency { CurrencyISOCode = "VND", Name = "Vietnamese đồng", Symbol = "₫",  FractionalUnit = "Hào", BaseNumber = 10 });
             builder.HasData(new Currency { CurrencyISOCode = "XCD", Name = "Eastern Caribbean dollar", Symbol = "$",  FractionalUnit = "Cent", BaseNumber = 100 });
             builder.HasData(new Currency { CurrencyISOCode = "XOF", Name = "West African CFA franc", Symbol = "Fr",  FractionalUnit = "Centime", BaseNumber = 100 });
             builder.HasData(new Currency { CurrencyISOCode = "XAF", Name = "Central African CFA franc", Symbol = "Fr",  FractionalUnit = "Centime", BaseNumber = 100 });
