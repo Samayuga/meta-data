@@ -8,7 +8,7 @@ namespace MetaDataCoreServices.Core.Data.MetaDataDatabase.EntityFramework.Entiti
 {
     public partial class Country
     {
-        public HierarchyId CountryId { get; set; }
+        public string CountryISOCode { get; set; }
         public string CountryName { get; set; }
         public string Capital { get; set; }
         public string Flag { get; set; }

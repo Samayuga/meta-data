@@ -8,7 +8,7 @@ namespace MetaDataCoreServices.Core.Data.MetaDataDatabase.EntityFramework.Entiti
 {
     public class Continent
     {
-        public HierarchyId ContinentId { get; set; }
+        public string ContinentCode { get; set; }
         public string ContinentName { get; set; }
     }
 }

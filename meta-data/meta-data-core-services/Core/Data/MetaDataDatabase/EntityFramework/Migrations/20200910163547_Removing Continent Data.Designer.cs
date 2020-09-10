@@ -4,14 +4,16 @@ using MetaDataCoreServices.Core.Data.MetaDataDatabase.EntityFramework;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace MetaDataCoreServices.Core.Data.MetaDataDatabase.EntityFramework.Migrations
 {
     [DbContext(typeof(MetaDataDatabaseContext))]
-    partial class MetaDataDatabaseContextModelSnapshot : ModelSnapshot
+    [Migration("20200910163547_Removing Continent Data")]
+    partial class RemovingContinentData
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -21,53 +23,16 @@ namespace MetaDataCoreServices.Core.Data.MetaDataDatabase.EntityFramework.Migrat
 
             modelBuilder.Entity("MetaDataCoreServices.Core.Data.MetaDataDatabase.EntityFramework.Entities.Continent", b =>
                 {
-                    b.Property<string>("ContinentCode")
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<HierarchyId>("ContinentId")
+                        .HasColumnType("hierarchyid");
 
                     b.Property<string>("ContinentName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("ContinentCode");
+                    b.HasKey("ContinentId");
 
                     b.ToTable("Continents");
-
-                    b.HasData(
-                        new
-                        {
-                            ContinentCode = "AF",
-                            ContinentName = "Africa"
-                        },
-                        new
-                        {
-                            ContinentCode = "AN",
-                            ContinentName = "Antarctica"
-                        },
-                        new
-                        {
-                            ContinentCode = "AS",
-                            ContinentName = "Asia"
-                        },
-                        new
-                        {
-                            ContinentCode = "EU",
-                            ContinentName = "Europe"
-                        },
-                        new
-                        {
-                            ContinentCode = "NA",
-                            ContinentName = "North America"
-                        },
-                        new
-                        {
-                            ContinentCode = "OC",
-                            ContinentName = "Oceania"
-                        },
-                        new
-                        {
-                            ContinentCode = "SA",
-                            ContinentName = "South America"
-                        });
                 });
 
             modelBuilder.Entity("MetaDataCoreServices.Core.Data.MetaDataDatabase.EntityFramework.Entities.Country", b =>

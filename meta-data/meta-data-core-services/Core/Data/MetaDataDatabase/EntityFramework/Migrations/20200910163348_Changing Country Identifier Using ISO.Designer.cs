@@ -4,14 +4,16 @@ using MetaDataCoreServices.Core.Data.MetaDataDatabase.EntityFramework;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace MetaDataCoreServices.Core.Data.MetaDataDatabase.EntityFramework.Migrations
 {
     [DbContext(typeof(MetaDataDatabaseContext))]
-    partial class MetaDataDatabaseContextModelSnapshot : ModelSnapshot
+    [Migration("20200910163348_Changing Country Identifier Using ISO")]
+    partial class ChangingCountryIdentifierUsingISO
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -21,52 +23,52 @@ namespace MetaDataCoreServices.Core.Data.MetaDataDatabase.EntityFramework.Migrat
 
             modelBuilder.Entity("MetaDataCoreServices.Core.Data.MetaDataDatabase.EntityFramework.Entities.Continent", b =>
                 {
-                    b.Property<string>("ContinentCode")
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<HierarchyId>("ContinentId")
+                        .HasColumnType("hierarchyid");
 
                     b.Property<string>("ContinentName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("ContinentCode");
+                    b.HasKey("ContinentId");
 
                     b.ToTable("Continents");
 
                     b.HasData(
                         new
                         {
-                            ContinentCode = "AF",
+                            ContinentId = Microsoft.EntityFrameworkCore.HierarchyId.Parse("/1/1/"),
                             ContinentName = "Africa"
                         },
                         new
                         {
-                            ContinentCode = "AN",
+                            ContinentId = Microsoft.EntityFrameworkCore.HierarchyId.Parse("/1/2/"),
                             ContinentName = "Antarctica"
                         },
                         new
                         {
-                            ContinentCode = "AS",
+                            ContinentId = Microsoft.EntityFrameworkCore.HierarchyId.Parse("/1/3/"),
                             ContinentName = "Asia"
                         },
                         new
                         {
-                            ContinentCode = "EU",
+                            ContinentId = Microsoft.EntityFrameworkCore.HierarchyId.Parse("/1/4/"),
                             ContinentName = "Europe"
                         },
                         new
                         {
-                            ContinentCode = "NA",
+                            ContinentId = Microsoft.EntityFrameworkCore.HierarchyId.Parse("/1/5/"),
                             ContinentName = "North America"
                         },
                         new
                         {
-                            ContinentCode = "OC",
-                            ContinentName = "Oceania"
+                            ContinentId = Microsoft.EntityFrameworkCore.HierarchyId.Parse("/1/6/"),
+                            ContinentName = "South America"
                         },
                         new
                         {
-                            ContinentCode = "SA",
-                            ContinentName = "South America"
+                            ContinentId = Microsoft.EntityFrameworkCore.HierarchyId.Parse("/1/7/"),
+                            ContinentName = "Australia"
                         });
                 });
 

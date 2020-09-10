@@ -13,16 +13,16 @@ namespace MetaDataCoreServices.Core.Data.MetaDataDatabase.EntityFramework.Entity
     {
         public void Configure(EntityTypeBuilder<Continent> builder)
         {
-            builder.HasKey(c => c.ContinentId);
+            builder.HasKey(c => c.ContinentCode);
             builder.Property(c => c.ContinentName).IsRequired();
 
-            builder.HasData(new Continent { ContinentId = HierarchyId.Parse("/1/1/"), ContinentName = "Africa" });
-            builder.HasData(new Continent { ContinentId = HierarchyId.Parse("/1/2/"), ContinentName = "Antarctica" });
-            builder.HasData(new Continent { ContinentId = HierarchyId.Parse("/1/3/"), ContinentName = "Asia" });
-            builder.HasData(new Continent { ContinentId = HierarchyId.Parse("/1/4/"), ContinentName = "Europe" });
-            builder.HasData(new Continent { ContinentId = HierarchyId.Parse("/1/5/"), ContinentName = "North America" });
-            builder.HasData(new Continent { ContinentId = HierarchyId.Parse("/1/6/"), ContinentName = "South America" });
-            builder.HasData(new Continent { ContinentId = HierarchyId.Parse("/1/7/"), ContinentName = "Australia" });
+            builder.HasData(new Continent { ContinentCode = "AF", ContinentName = "Africa" });
+            builder.HasData(new Continent { ContinentCode = "AN", ContinentName = "Antarctica" });
+            builder.HasData(new Continent { ContinentCode = "AS", ContinentName = "Asia" });
+            builder.HasData(new Continent { ContinentCode = "EU", ContinentName = "Europe" });
+            builder.HasData(new Continent { ContinentCode = "NA", ContinentName = "North America" });
+            builder.HasData(new Continent { ContinentCode = "OC", ContinentName = "Oceania" });
+            builder.HasData(new Continent { ContinentCode = "SA", ContinentName = "South America" });
         }
     }
 }
