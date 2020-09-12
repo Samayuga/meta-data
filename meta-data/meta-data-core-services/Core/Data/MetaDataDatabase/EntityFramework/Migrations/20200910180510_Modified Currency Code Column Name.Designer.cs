@@ -4,14 +4,16 @@ using MetaDataCoreServices.Core.Data.MetaDataDatabase.EntityFramework;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace MetaDataCoreServices.Core.Data.MetaDataDatabase.EntityFramework.Migrations
 {
     [DbContext(typeof(MetaDataDatabaseContext))]
-    partial class MetaDataDatabaseContextModelSnapshot : ModelSnapshot
+    [Migration("20200910180510_Modified Currency Code Column Name")]
+    partial class ModifiedCurrencyCodeColumnName
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -88,7 +90,7 @@ namespace MetaDataCoreServices.Core.Data.MetaDataDatabase.EntityFramework.Migrat
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("CurrencyCode")
+                    b.Property<string>("CurrencyISOCode")
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("Flag")
@@ -101,22 +103,9 @@ namespace MetaDataCoreServices.Core.Data.MetaDataDatabase.EntityFramework.Migrat
 
                     b.HasIndex("ContinentCode");
 
-                    b.HasIndex("CurrencyCode");
+                    b.HasIndex("CurrencyISOCode");
 
                     b.ToTable("Countries");
-
-                    b.HasData(
-                        new
-                        {
-                            CountryCode = "DZ",
-                            CallingCode = "+213",
-                            Capital = "Algiers",
-                            ContinentCode = "AF",
-                            CountryName = "Algeria",
-                            CurrencyCode = "DZD",
-                            Flag = "/wikimedia/countries/flags/dz.svg",
-                            OrthographicMap = "/wikimedia/countries/orthographic-maps/dz.svg"
-                        });
                 });
 
             modelBuilder.Entity("MetaDataCoreServices.Core.Data.MetaDataDatabase.EntityFramework.Entities.Currency", b =>
@@ -1493,7 +1482,7 @@ namespace MetaDataCoreServices.Core.Data.MetaDataDatabase.EntityFramework.Migrat
 
                     b.HasOne("MetaDataCoreServices.Core.Data.MetaDataDatabase.EntityFramework.Entities.Currency", "Currency")
                         .WithMany()
-                        .HasForeignKey("CurrencyCode");
+                        .HasForeignKey("CurrencyISOCode");
                 });
 #pragma warning restore 612, 618
         }

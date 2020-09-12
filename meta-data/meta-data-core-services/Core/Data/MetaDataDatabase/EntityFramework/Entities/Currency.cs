@@ -8,7 +8,7 @@ namespace MetaDataCoreServices.Core.Data.MetaDataDatabase.EntityFramework.Entiti
 {
     public class Currency
     {
-        public string CurrencyISOCode { get; set; }
+        public string CurrencyCode { get; set; }
         public string Name { get; set; }
         public string Symbol { get; set; }
         public string FractionalUnit { get; set; }

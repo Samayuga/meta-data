@@ -61,11 +61,6 @@ for more info please visit https://github.com/samayuga</Description>
     <Compile Remove="Core\Data\MetaDataDatabase\EntityFramework\Migrations\20200905103733_Adding Currency.Designer.cs" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="wwwroot\wikimedia\countries\flags\" />
-    <Folder Include="wwwroot\wikimedia\countries\orthographic-maps\" />
-  </ItemGroup>
-
   <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">
     <!-- Ensure Node.js is installed -->
     <Exec Command="node --version" ContinueOnError="true">
