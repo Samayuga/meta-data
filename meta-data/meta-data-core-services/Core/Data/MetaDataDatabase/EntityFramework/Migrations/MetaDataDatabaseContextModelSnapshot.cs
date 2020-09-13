@@ -160,6 +160,460 @@ namespace MetaDataCoreServices.Core.Data.MetaDataDatabase.EntityFramework.Migrat
                             CurrencyCode = "XOF",
                             Flag = "/wikimedia/countries/flags/bf.svg",
                             OrthographicMap = "/wikimedia/countries/orthographic-maps/bf.svg"
+                        },
+                        new
+                        {
+                            CountryCode = "BI",
+                            CallingCode = "+257",
+                            Capital = "Gitega",
+                            ContinentCode = "AF",
+                            CountryName = "Burundi",
+                            CurrencyCode = "BIF",
+                            Flag = "/wikimedia/countries/flags/bi.svg",
+                            OrthographicMap = "/wikimedia/countries/orthographic-maps/bi.svg"
+                        },
+                        new
+                        {
+                            CountryCode = "CM",
+                            CallingCode = "+237",
+                            Capital = "Yaoundé",
+                            ContinentCode = "AF",
+                            CountryName = "Cameroon",
+                            CurrencyCode = "XAF",
+                            Flag = "/wikimedia/countries/flags/cm.svg",
+                            OrthographicMap = "/wikimedia/countries/orthographic-maps/cm.svg"
+                        },
+                        new
+                        {
+                            CountryCode = "CV",
+                            Capital = "Praia",
+                            ContinentCode = "AF",
+                            CountryName = "Cape Verde",
+                            Flag = "/wikimedia/countries/flags/.svg",
+                            OrthographicMap = "/wikimedia/countries/orthographic-maps/.svg"
+                        },
+                        new
+                        {
+                            CountryCode = "CF",
+                            Capital = "Bangui",
+                            ContinentCode = "AF",
+                            CountryName = "Central African Republic",
+                            Flag = "/wikimedia/countries/flags/.svg",
+                            OrthographicMap = "/wikimedia/countries/orthographic-maps/.svg"
+                        },
+                        new
+                        {
+                            CountryCode = "TD",
+                            Capital = "N'Djamena",
+                            ContinentCode = "AF",
+                            CountryName = "Chad",
+                            Flag = "/wikimedia/countries/flags/.svg",
+                            OrthographicMap = "/wikimedia/countries/orthographic-maps/.svg"
+                        },
+                        new
+                        {
+                            CountryCode = "KM",
+                            Capital = "Moroni",
+                            ContinentCode = "AF",
+                            CountryName = "Comoros",
+                            Flag = "/wikimedia/countries/flags/.svg",
+                            OrthographicMap = "/wikimedia/countries/orthographic-maps/.svg"
+                        },
+                        new
+                        {
+                            CountryCode = "CG",
+                            Capital = "Brazzaville",
+                            ContinentCode = "AF",
+                            CountryName = "Republic of the Congo",
+                            Flag = "/wikimedia/countries/flags/.svg",
+                            OrthographicMap = "/wikimedia/countries/orthographic-maps/.svg"
+                        },
+                        new
+                        {
+                            CountryCode = "CD",
+                            Capital = "Kinshasa",
+                            ContinentCode = "AF",
+                            CountryName = "Democratic Republic of the Congo",
+                            Flag = "/wikimedia/countries/flags/.svg",
+                            OrthographicMap = "/wikimedia/countries/orthographic-maps/.svg"
+                        },
+                        new
+                        {
+                            CountryCode = "CI",
+                            Capital = "Yamoussoukro",
+                            ContinentCode = "AF",
+                            CountryName = "Ivory Coast",
+                            Flag = "/wikimedia/countries/flags/.svg",
+                            OrthographicMap = "/wikimedia/countries/orthographic-maps/.svg"
+                        },
+                        new
+                        {
+                            CountryCode = "DJ",
+                            Capital = "Djibouti",
+                            ContinentCode = "AF",
+                            CountryName = "Djibouti",
+                            Flag = "/wikimedia/countries/flags/.svg",
+                            OrthographicMap = "/wikimedia/countries/orthographic-maps/.svg"
+                        },
+                        new
+                        {
+                            CountryCode = "EG",
+                            Capital = "Cairo",
+                            ContinentCode = "AF",
+                            CountryName = "Egypt",
+                            Flag = "/wikimedia/countries/flags/.svg",
+                            OrthographicMap = "/wikimedia/countries/orthographic-maps/.svg"
+                        },
+                        new
+                        {
+                            CountryCode = "GQ",
+                            Capital = "Malabo",
+                            ContinentCode = "AF",
+                            CountryName = "Equatorial Guinea",
+                            Flag = "/wikimedia/countries/flags/.svg",
+                            OrthographicMap = "/wikimedia/countries/orthographic-maps/.svg"
+                        },
+                        new
+                        {
+                            CountryCode = "ER",
+                            Capital = "Asmara",
+                            ContinentCode = "AF",
+                            CountryName = "Eritrea",
+                            Flag = "/wikimedia/countries/flags/.svg",
+                            OrthographicMap = "/wikimedia/countries/orthographic-maps/.svg"
+                        },
+                        new
+                        {
+                            CountryCode = "ET",
+                            Capital = "Addis Ababa",
+                            ContinentCode = "AF",
+                            CountryName = "Ethiopia",
+                            Flag = "/wikimedia/countries/flags/.svg",
+                            OrthographicMap = "/wikimedia/countries/orthographic-maps/.svg"
+                        },
+                        new
+                        {
+                            CountryCode = "GA",
+                            Capital = "Libreville",
+                            ContinentCode = "AF",
+                            CountryName = "Gabon",
+                            Flag = "/wikimedia/countries/flags/.svg",
+                            OrthographicMap = "/wikimedia/countries/orthographic-maps/.svg"
+                        },
+                        new
+                        {
+                            CountryCode = "GM",
+                            Capital = "Banjul",
+                            ContinentCode = "AF",
+                            CountryName = "The Gambia",
+                            Flag = "/wikimedia/countries/flags/.svg",
+                            OrthographicMap = "/wikimedia/countries/orthographic-maps/.svg"
+                        },
+                        new
+                        {
+                            CountryCode = "GH",
+                            Capital = "Accra",
+                            ContinentCode = "AF",
+                            CountryName = "Ghana",
+                            Flag = "/wikimedia/countries/flags/.svg",
+                            OrthographicMap = "/wikimedia/countries/orthographic-maps/.svg"
+                        },
+                        new
+                        {
+                            CountryCode = "GN",
+                            Capital = "Conakry",
+                            ContinentCode = "AF",
+                            CountryName = "Guinea",
+                            Flag = "/wikimedia/countries/flags/.svg",
+                            OrthographicMap = "/wikimedia/countries/orthographic-maps/.svg"
+                        },
+                        new
+                        {
+                            CountryCode = "GW",
+                            Capital = "Bissau",
+                            ContinentCode = "AF",
+                            CountryName = "Guinea-Bissau",
+                            Flag = "/wikimedia/countries/flags/.svg",
+                            OrthographicMap = "/wikimedia/countries/orthographic-maps/.svg"
+                        },
+                        new
+                        {
+                            CountryCode = "KE",
+                            Capital = "Nairobi",
+                            ContinentCode = "AF",
+                            CountryName = "Kenya",
+                            Flag = "/wikimedia/countries/flags/.svg",
+                            OrthographicMap = "/wikimedia/countries/orthographic-maps/.svg"
+                        },
+                        new
+                        {
+                            CountryCode = "LS",
+                            Capital = "Maseru",
+                            ContinentCode = "AF",
+                            CountryName = "Lesotho",
+                            Flag = "/wikimedia/countries/flags/.svg",
+                            OrthographicMap = "/wikimedia/countries/orthographic-maps/.svg"
+                        },
+                        new
+                        {
+                            CountryCode = "LR",
+                            Capital = "Monrovia",
+                            ContinentCode = "AF",
+                            CountryName = "Liberia",
+                            Flag = "/wikimedia/countries/flags/.svg",
+                            OrthographicMap = "/wikimedia/countries/orthographic-maps/.svg"
+                        },
+                        new
+                        {
+                            CountryCode = "LY",
+                            Capital = "Tripoli",
+                            ContinentCode = "AF",
+                            CountryName = "Libya",
+                            Flag = "/wikimedia/countries/flags/.svg",
+                            OrthographicMap = "/wikimedia/countries/orthographic-maps/.svg"
+                        },
+                        new
+                        {
+                            CountryCode = "MG",
+                            Capital = "Antananarivo",
+                            ContinentCode = "AF",
+                            CountryName = "Madagascar",
+                            Flag = "/wikimedia/countries/flags/.svg",
+                            OrthographicMap = "/wikimedia/countries/orthographic-maps/.svg"
+                        },
+                        new
+                        {
+                            CountryCode = "MW",
+                            Capital = "Lilongwe",
+                            ContinentCode = "AF",
+                            CountryName = "Malawi",
+                            Flag = "/wikimedia/countries/flags/.svg",
+                            OrthographicMap = "/wikimedia/countries/orthographic-maps/.svg"
+                        },
+                        new
+                        {
+                            CountryCode = "ML",
+                            Capital = "Bamako",
+                            ContinentCode = "AF",
+                            CountryName = "Mali",
+                            Flag = "/wikimedia/countries/flags/.svg",
+                            OrthographicMap = "/wikimedia/countries/orthographic-maps/.svg"
+                        },
+                        new
+                        {
+                            CountryCode = "MR",
+                            Capital = "Nouakchott",
+                            ContinentCode = "AF",
+                            CountryName = "Mauritania",
+                            Flag = "/wikimedia/countries/flags/.svg",
+                            OrthographicMap = "/wikimedia/countries/orthographic-maps/.svg"
+                        },
+                        new
+                        {
+                            CountryCode = "MU",
+                            Capital = "Port Louis",
+                            ContinentCode = "AF",
+                            CountryName = "Mauritius",
+                            Flag = "/wikimedia/countries/flags/.svg",
+                            OrthographicMap = "/wikimedia/countries/orthographic-maps/.svg"
+                        },
+                        new
+                        {
+                            CountryCode = "MA",
+                            Capital = "Rabat",
+                            ContinentCode = "AF",
+                            CountryName = "Morocco",
+                            Flag = "/wikimedia/countries/flags/.svg",
+                            OrthographicMap = "/wikimedia/countries/orthographic-maps/.svg"
+                        },
+                        new
+                        {
+                            CountryCode = "MZ",
+                            Capital = "Maputo",
+                            ContinentCode = "AF",
+                            CountryName = "Mozambique",
+                            Flag = "/wikimedia/countries/flags/.svg",
+                            OrthographicMap = "/wikimedia/countries/orthographic-maps/.svg"
+                        },
+                        new
+                        {
+                            CountryCode = "NA",
+                            Capital = "Windhoek",
+                            ContinentCode = "AF",
+                            CountryName = "Namibia",
+                            Flag = "/wikimedia/countries/flags/.svg",
+                            OrthographicMap = "/wikimedia/countries/orthographic-maps/.svg"
+                        },
+                        new
+                        {
+                            CountryCode = "NE",
+                            Capital = "Niamey",
+                            ContinentCode = "AF",
+                            CountryName = "Niger",
+                            Flag = "/wikimedia/countries/flags/.svg",
+                            OrthographicMap = "/wikimedia/countries/orthographic-maps/.svg"
+                        },
+                        new
+                        {
+                            CountryCode = "NG",
+                            Capital = "Abuja",
+                            ContinentCode = "AF",
+                            CountryName = "Nigeria",
+                            Flag = "/wikimedia/countries/flags/.svg",
+                            OrthographicMap = "/wikimedia/countries/orthographic-maps/.svg"
+                        },
+                        new
+                        {
+                            CountryCode = "RW",
+                            Capital = "Kigali",
+                            ContinentCode = "AF",
+                            CountryName = "Rwanda",
+                            Flag = "/wikimedia/countries/flags/.svg",
+                            OrthographicMap = "/wikimedia/countries/orthographic-maps/.svg"
+                        },
+                        new
+                        {
+                            CountryCode = "ST",
+                            Capital = "São Tomé",
+                            ContinentCode = "AF",
+                            CountryName = "São Tomé and Príncipe",
+                            Flag = "/wikimedia/countries/flags/.svg",
+                            OrthographicMap = "/wikimedia/countries/orthographic-maps/.svg"
+                        },
+                        new
+                        {
+                            CountryCode = "SN",
+                            Capital = "Dakar",
+                            ContinentCode = "AF",
+                            CountryName = "Senegal",
+                            Flag = "/wikimedia/countries/flags/.svg",
+                            OrthographicMap = "/wikimedia/countries/orthographic-maps/.svg"
+                        },
+                        new
+                        {
+                            CountryCode = "SC",
+                            Capital = "Victoria",
+                            ContinentCode = "AF",
+                            CountryName = "Seychelles",
+                            Flag = "/wikimedia/countries/flags/.svg",
+                            OrthographicMap = "/wikimedia/countries/orthographic-maps/.svg"
+                        },
+                        new
+                        {
+                            CountryCode = "SL",
+                            Capital = "Freetown",
+                            ContinentCode = "AF",
+                            CountryName = "Sierra Leone",
+                            Flag = "/wikimedia/countries/flags/.svg",
+                            OrthographicMap = "/wikimedia/countries/orthographic-maps/.svg"
+                        },
+                        new
+                        {
+                            CountryCode = "SO",
+                            Capital = "Mogadishu",
+                            ContinentCode = "AF",
+                            CountryName = "Somalia",
+                            Flag = "/wikimedia/countries/flags/.svg",
+                            OrthographicMap = "/wikimedia/countries/orthographic-maps/.svg"
+                        },
+                        new
+                        {
+                            CountryCode = "ZA",
+                            Capital = "Pretoria",
+                            ContinentCode = "AF",
+                            CountryName = "South Africa",
+                            Flag = "/wikimedia/countries/flags/.svg",
+                            OrthographicMap = "/wikimedia/countries/orthographic-maps/.svg"
+                        },
+                        new
+                        {
+                            CountryCode = "SS",
+                            Capital = "Juba",
+                            ContinentCode = "AF",
+                            CountryName = "South Sudan",
+                            Flag = "/wikimedia/countries/flags/.svg",
+                            OrthographicMap = "/wikimedia/countries/orthographic-maps/.svg"
+                        },
+                        new
+                        {
+                            CountryCode = "SD",
+                            Capital = "Khartoum",
+                            ContinentCode = "AF",
+                            CountryName = "Sudan",
+                            Flag = "/wikimedia/countries/flags/.svg",
+                            OrthographicMap = "/wikimedia/countries/orthographic-maps/.svg"
+                        },
+                        new
+                        {
+                            CountryCode = "SZ",
+                            Capital = "Mbabane",
+                            ContinentCode = "AF",
+                            CountryName = "Swaziland",
+                            Flag = "/wikimedia/countries/flags/.svg",
+                            OrthographicMap = "/wikimedia/countries/orthographic-maps/.svg"
+                        },
+                        new
+                        {
+                            CountryCode = "TZ",
+                            Capital = "Dodoma",
+                            ContinentCode = "AF",
+                            CountryName = "Tanzania",
+                            Flag = "/wikimedia/countries/flags/.svg",
+                            OrthographicMap = "/wikimedia/countries/orthographic-maps/.svg"
+                        },
+                        new
+                        {
+                            CountryCode = "TG",
+                            Capital = "Lome",
+                            ContinentCode = "AF",
+                            CountryName = "Togo",
+                            Flag = "/wikimedia/countries/flags/.svg",
+                            OrthographicMap = "/wikimedia/countries/orthographic-maps/.svg"
+                        },
+                        new
+                        {
+                            CountryCode = "TN",
+                            Capital = "Tunis",
+                            ContinentCode = "AF",
+                            CountryName = "Tunisia",
+                            Flag = "/wikimedia/countries/flags/.svg",
+                            OrthographicMap = "/wikimedia/countries/orthographic-maps/.svg"
+                        },
+                        new
+                        {
+                            CountryCode = "UG",
+                            Capital = "Kampala",
+                            ContinentCode = "AF",
+                            CountryName = "Uganda",
+                            Flag = "/wikimedia/countries/flags/.svg",
+                            OrthographicMap = "/wikimedia/countries/orthographic-maps/.svg"
+                        },
+                        new
+                        {
+                            CountryCode = "EH",
+                            Capital = "El Aaiún",
+                            ContinentCode = "AF",
+                            CountryName = "Western Sahara",
+                            Flag = "/wikimedia/countries/flags/.svg",
+                            OrthographicMap = "/wikimedia/countries/orthographic-maps/.svg"
+                        },
+                        new
+                        {
+                            CountryCode = "ZM",
+                            Capital = "Lusaka",
+                            ContinentCode = "AF",
+                            CountryName = "Zambia",
+                            Flag = "/wikimedia/countries/flags/.svg",
+                            OrthographicMap = "/wikimedia/countries/orthographic-maps/.svg"
+                        },
+                        new
+                        {
+                            CountryCode = "ZW",
+                            Capital = "Harare",
+                            ContinentCode = "AF",
+                            CountryName = "Zimbabwe",
+                            Flag = "/wikimedia/countries/flags/.svg",
+                            OrthographicMap = "/wikimedia/countries/orthographic-maps/.svg"
                         });
                 });
 
@@ -1505,27 +1959,6 @@ namespace MetaDataCoreServices.Core.Data.MetaDataDatabase.EntityFramework.Migrat
                             FractionalUnit = "Ngwee",
                             Name = "Zambian kwacha",
                             Symbol = "ZK"
-                        });
-                });
-
-            modelBuilder.Entity("MetaDataCoreServices.Core.Data.MetaDataDatabase.EntityFramework.Entities.Planet", b =>
-                {
-                    b.Property<HierarchyId>("PlanetId")
-                        .HasColumnType("hierarchyid");
-
-                    b.Property<string>("PlanetName")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("PlanetId");
-
-                    b.ToTable("Planets");
-
-                    b.HasData(
-                        new
-                        {
-                            PlanetId = Microsoft.EntityFrameworkCore.HierarchyId.Parse("/1/"),
-                            PlanetName = "Earth"
                         });
                 });
 

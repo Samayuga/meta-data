@@ -27,7 +27,7 @@ namespace MetaDataCoreServices.Core.Data.MetaDataDatabase.EntityFramework.Extent
             {
                 using var context = scope.ServiceProvider.GetRequiredService<MetaDataDatabaseContext>();
 
-                var x = context.Planets.ToList();
+                //var x = context.Planets.ToList();
             }
 
             return host;

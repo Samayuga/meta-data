@@ -59,6 +59,8 @@ for more info please visit https://github.com/samayuga</Description>
     <Compile Remove="Core\Data\MetaDataDatabase\EntityFramework\Migrations\20200905103454_Linking Countries Currency.Designer.cs" />
     <Compile Remove="Core\Data\MetaDataDatabase\EntityFramework\Migrations\20200905103733_Adding Currency.cs" />
     <Compile Remove="Core\Data\MetaDataDatabase\EntityFramework\Migrations\20200905103733_Adding Currency.Designer.cs" />
+    <Compile Remove="Core\Data\MetaDataDatabase\EntityFramework\Migrations\20200913160518_Adding African Countries.cs" />
+    <Compile Remove="Core\Data\MetaDataDatabase\EntityFramework\Migrations\20200913160518_Adding African Countries.Designer.cs" />
   </ItemGroup>
 
   <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">
